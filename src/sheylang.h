@@ -1,0 +1,1 @@
+int sheylangTampilkan(const char *message);

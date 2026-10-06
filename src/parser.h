@@ -1,0 +1,1 @@
+int parser(const char *keyword, const char *buffer, int line);

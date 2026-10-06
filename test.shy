@@ -1,0 +1,14 @@
+tampilkan "Hello, World"
+tampilkan "And, Hello Delfin"
+
+var int Integer
+var string String
+var float Float
+
+ubah Integer 1
+ubah String "a"
+ubah Float 1.0
+
+tampilkan Integer
+tampilkan String
+tampilkan Float
