@@ -69,6 +69,20 @@ int parser(const char *keyword, const char *buffer, int line) {
         return 0;
     }
 
+    // proses keyword keluar
+    else if(strcmp(keyword, "keluar") == 0) {
+        // wajibkan tidak ada argumen tambahan
+        char tmp[512];
+        if(sscanf(buffer, "keluar %s", tmp) == 1) {
+            error("Fungsi keluar tidak boleh memiliki argumen tambahan!", line);
+            return 1;
+        }
+        else {
+            // kirim return 1 kepada lexer agar berhenti membaca file
+            return 1;
+        }
+    }
+
     // Proses parsing untuk variabel
     else if(strcmp(keyword, "var") == 0) {
         char varType[10], varName[50];
