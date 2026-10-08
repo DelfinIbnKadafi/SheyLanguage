@@ -20,6 +20,6 @@ int main(int argc, char *argv[]) {
     }
 
     // oper ke lexer untuk membaca file dan mengubahnya menjadi token
-    lexer(argv[1]);
-    return 0;
+    // hasil lexer dikembalikan sebagai exit code supaya error seperti file tidak ditemukan tidak hilang
+    return lexer(argv[1]);
 }
